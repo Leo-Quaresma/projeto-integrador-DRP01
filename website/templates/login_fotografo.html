@@ -1,9 +1,10 @@
 {% extends "base.html" %} {% block title %}Login Fotografo - FOTECTA: Como conectar fotógrafos com novos clientes{% endblock %}
 {%block content%}
 
-<form method="GET">
+<!-- Login é feito via post para não expor credenciais na query string/url-->
+<form method="POST">
 
-    <h3 align="center">lOGIN DO PROFISSIONAL</h3>
+    <h3 align="center">LOGIN DO PROFISSIONAL</h3>
     <div class="form-group">
         <label for="email">Endereço de Email</label>
         <input

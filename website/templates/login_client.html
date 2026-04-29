@@ -1,8 +1,9 @@
 {% extends "base.html" %} {% block title %}Login Cliente - FOTECTA: Como conectar fotógrafos com novos clientes{% endblock %}
 {%block content%}
 
-<form method="GET">
-    <h3 align="center">lOGIN DO CLIENTE</h3>
+<!-- Login é feito via post para não expor credenciais na query string/url-->
+<form method="POST">
+    <h3 align="center">LOGIN DO CLIENTE</h3>
     <div class="form-group">
         <label for="email">Endereço de Email</label>
         <input

@@ -1,4 +1,49 @@
-{% extends "base.html" %} {% block title %}FOTECTA - Como conectar fotógrafos com novos clientes{% endblock %}
-{%block content%}
-<h1> FOTECTA - Como conectar fotógrafos com novos clientes</h1>
-{%endblock%}
+{% extends "base.html" %}
+{% block title %}FOTECTA - Conectando Fotógrafos e Clientes{% endblock %}
+
+{% block content %}
+<div class="text-center py-5">
+    <h1 class="fw-bold">Nossos Fotógrafos</h1>
+    <p class="text-muted">Conheça os profissionais por trás das lentes</p>
+</div>
+
+<!-- Note as classes responsáveis por responsividade. Também compatíveis com mobile-->
+<div class="row g-4">
+    <div class="col-12 col-md-6">
+        <div class="card-fotografo d-flex align-items-start shadow-sm">
+            <div class="img-placeholder me-3"></div>
+            <div>
+                <h5 class="mb-1 fw-bold">Maria Silva</h5>
+                <p class="text-muted small mb-2">Fotógrafa de Retratos</p>
+                <div class="small mb-2">
+                    <i class="fas fa-envelope me-1"></i> maria@exemplo.com<br>
+                    <i class="fas fa-phone me-1"></i> (11) 98765-4321
+                </div>
+                <span class="badge badge-tag">Retratos</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <div class="card-fotografo d-flex align-items-start shadow-sm">
+            <div class="img-placeholder me-3"></div>
+            <div>
+                <h5 class="mb-1 fw-bold">João Pereira</h5>
+                <p class="text-muted small mb-2">Fotógrafo de Casamentos</p>
+                <div class="small mb-2">
+                    <i class="fas fa-envelope me-1"></i> joao@exemplo.com<br>
+                    <i class="fas fa-phone me-1"></i> (21) 99876-5432
+                </div>
+                <span class="badge badge-tag">Casamentos</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center py-5 mt-5 bg-light rounded-4">
+    <h2 class="fw-bold">Bem-vindo à Nossa Plataforma</h2>
+    <p class="text-muted mx-auto" style="max-width: 600px;">
+        Conectando fotógrafos talentosos a clientes em busca de excelência.
+    </p>
+</div>
+{% endblock %}
